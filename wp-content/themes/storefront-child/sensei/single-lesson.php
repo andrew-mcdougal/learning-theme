@@ -57,15 +57,23 @@
 // if it has info slides then show stuff
 if( have_rows('info_slide') ):
 
+    echo '<ul class="bx-slider">';
+
     // loop through the rows of data
     while ( have_rows('info_slide') ) : the_row();
 
         // show stuff
         $content = get_sub_field('info_content');
 
+        echo '<li>';
+
         echo '<h3>' . $content . '</h3>';
 
+        echo '</li>';
+
     endwhile;
+
+    echo '</ul>';
 
 // if it does not have info slides then show something else
 else :

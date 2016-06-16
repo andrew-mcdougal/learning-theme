@@ -19,11 +19,17 @@ $(document).ready(function(){
 
 	//$('[data-remodal-id=modal2]').remodal();
 
+	
+
 
 });
 
 	// $ Works! You can test it with next line if you like
 	// console.log($);
+
+$(window).load(function() {
+	$('.bx-slider').bxSlider();
+});
 	
 	
 })( jQuery );
